@@ -23,3 +23,8 @@ Use your alias:
 ```php
 {{ URL::to('something') }} # will produce: //<host>/something
 ```
+
+
+### Todo
+
+Add the same protocal-relative urls for laravel forms and etc.
