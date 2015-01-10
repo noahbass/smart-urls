@@ -1,6 +1,7 @@
 {
 	"name": "noahbass/smart-urls",
 	"description": "Laravel package to use protocol-relative urls.",
+	"keywords": ["laravel", "smart", "urls", "protocol-relative"],
 	"license": "MIT",
 	"authors": [
 		{
