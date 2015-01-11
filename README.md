@@ -34,4 +34,5 @@ Use your alias:
 
 ### Todo
 
-Add the same protocal-relative urls for laravel forms and etc.
+- Add the same protocal-relative urls for laravel forms and etc.
+- Testing
