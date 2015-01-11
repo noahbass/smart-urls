@@ -11,7 +11,7 @@ class SUrl {
 	 *
 	 * @return str
 	 */
-	public function __callStatic($method, $params = array('/'))
+	public static function __callStatic($method, $params = array('/'))
 	{
 		return str_replace('http:', null, URL::$method($params[0]));
 	}
