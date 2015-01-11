@@ -26,8 +26,6 @@ class SmartUrlsServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('noahbass/smart-urls');
-
-		//AliasLoader::getInstance()->alias('URL', 'Noahbass\SmartUrls\SUrl');
 	}
 
 
