@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/noahbass/smart-urls.svg?style=flat-square)](https://travis-ci.org/noahbass/smart-urls)
 [![Release](https://img.shields.io/github/release/noahbass/smart-urls.svg?style=flat-square)](https://packagist.org/packages/noahbass/smart-urls)
-![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/noahbass/smart-urls/blob/master/LICENSE)
 
 Make laravel smarter by producing [protocol-relative urls](https://en.wikipedia.org/wiki/Uniform_resource_locator#Protocol-relative_URLs).
 
