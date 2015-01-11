@@ -26,12 +26,6 @@ Or add it to `composer.json`:
 }
 ```
 
-Add the service provider to `app/config/app.php`:
-
-```php
-'Noahbass\SmartUrls\SmartUrlsServiceProvider'
-```
-
 `Noahbass\SmartUrls\SUrl` and `Noahbass\SmartUrls\SForm` are available for aliases. Use them at your leisure in `app/config/app.php` (Using `URL` in this example):
 
 ```php
