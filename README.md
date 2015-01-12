@@ -26,27 +26,36 @@ Or add it to `composer.json`:
 }
 ```
 
-`Noahbass\SmartUrls\SUrl` and `Noahbass\SmartUrls\SForm` are available for aliases. Use them at your leisure in `app/config/app.php` (Using `URL` in this example):
+#### URLs
+
+`Noahbass\SmartUrls\SUrl` is available for alias. Use it in `app/config/app.php`:
 
 ```php
-'URL'  => 'Noahbass\SmartUrls\SUrl',
-'Form' => 'Noahbass\SmartUrls\SForm'
+'URL' => 'Noahbass\SmartUrls\SUrl'
 ```
 
-### Usage
-
-Use your alias:
+URL usage:
 
 ```php
 {{ URL::to('something') }}
 # will produce: //<host>/something
 ```
 
+#### Forms
+
+`Noahbass\SmartUrls\SForm` is available for alias. It must be used in combination with `Illuminate\Support\Facades\Form`. Use it at your leisure in `app/config/app.php`:
+
 ```php
-{{ Form::open(['url' => 'something']) }}
-# will produce: <form method="POST" action="//<host>/something" accept-charset="UTF-8">...
+'Form'  => 'Illuminate\Support\Facades\Form',
+'SForm' => 'Noahbass\SmartUrls\SForm'
 ```
 
+Form usage (`SForm` only works for `open`, `close`, and `model` methods):
+
+```php
+{{ SForm::open(['url' => 'something']) }}
+# will produce: <form method="POST" action="//<host>/something" accept-charset="UTF-8">...
+```
 
 ### Todo
 
