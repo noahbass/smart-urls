@@ -7,13 +7,13 @@ class SUrl {
 	/**
 	 * Update url to be protocal-relative.
 	 * @var str $method
-	 * @var array $params
+	 * @var array $attributes
 	 *
 	 * @return str
 	 */
-	public static function __callStatic($method, $params = array('/'))
+	public static function __callStatic($method, $attributes = array('/'))
 	{
-		return str_replace('http:', null, URL::$method($params[0]));
+		return str_replace('http:', null, URL::$method($attributes[0]));
 	}
 
 }
