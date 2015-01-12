@@ -13,7 +13,9 @@ class SUrl {
 	 */
 	public static function __callStatic($method, $attributes = array('/'))
 	{
-		return str_replace('http:', null, URL::$method($attributes[0]));
+		$attributes = implode(',', $attributes);
+
+		dd(str_replace('http:', null, URL::$method($attributes)));
 	}
 
 }
