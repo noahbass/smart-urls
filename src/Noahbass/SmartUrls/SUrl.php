@@ -15,7 +15,7 @@ class SUrl {
 	{
 		$attributes = implode(',', $attributes);
 
-		dd(str_replace('http:', null, URL::$method($attributes)));
+		return str_replace('http:', null, URL::$method($attributes));
 	}
 
 }
